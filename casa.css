@@ -80,6 +80,10 @@ form textarea:focus {
   border-color: #d4af37;
   box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
 }
+input[type="tel"] {
+  direction: rtl;
+  text-align: right;
+}
 
 form textarea {
   resize: none;
@@ -124,4 +128,5 @@ footer {
     transform: translateY(0);
   }
 }
+
 
