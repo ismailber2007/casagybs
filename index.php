@@ -14,7 +14,7 @@
   <main class="container">
     <h2>📦 إنشاء شحنة جديدة</h2>
 
-    <form id="colisForm">
+   <form action="create.php" method="POST">
       <input type="text" name="customer_name" placeholder="اسم الزبون" required>
       <input type="tel" name="phone" placeholder="رقم الهاتف" required>
 
@@ -44,6 +44,7 @@
 </body>
 
 </html>
+
 
 
 
