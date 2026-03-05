@@ -3,14 +3,17 @@
 $token = getenv("ECOTRACK_TOKEN");
 
 $url = "https://app.ecotrack.dz/api/v1/create/order";
+
 $data = [
     "nom_client" => $_POST['customer_name'],
     "telephone" => $_POST['phone'],
-    "wilaya" => $_POST['wilaya'],
-    "commune" => $_POST['commune'],
     "adresse" => $_POST['address'],
+    "code_wilaya" => $_POST['wilaya'],
+    "commune" => $_POST['commune'],
     "montant" => $_POST['price'],
-    "commentaire" => $_POST['note']
+    "remarque" => $_POST['note'],
+    "type" => "1",
+    "boutique" => "CasaGyps"
 ];
 
 $ch = curl_init($url);
@@ -32,6 +35,4 @@ echo "<pre>";
 print_r($response);
 echo "</pre>";
 
-
 ?>
-
