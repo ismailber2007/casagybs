@@ -2,7 +2,7 @@
 // ضع هنا الـ token من Environment Variable أو مباشرة
 $token = getenv("ECOTRACK_TOKEN"); 
 // رابط الـ API الصحيح من curl command في Postman
-$url = "https://api.ecotrack.tn/v1/orders"; 
+$url = "{{url}}/api/v1/create/order?reference&nom_client=&telephone=&telephone_2&adresse=&code_postal&commune=&code_wilaya=&montant=&remarque&produit&stock&quantite&produit_a_recuperer&boutique&type=&stop_desk&weight&fragile&gps_link"; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = [
@@ -36,3 +36,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "الطريقة غير مسموحة.";
 }
 ?>
+
